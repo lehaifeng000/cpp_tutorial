@@ -1,8 +1,10 @@
 # 设置最低的CMake版本要求
 cmake_minimum_required(VERSION 3.0)
 
+set(TARGET json_demo)
+
 # 项目名称
-project(json_demo)
+project(${TARGET})
 
 
 file(GLOB_RECURSE EXEC_SOURCES src/main.cpp)
@@ -10,10 +12,10 @@ file(GLOB_RECURSE LIB_SOURCES src/*/*.cpp)
 # file(GLOB_RECURSE LIB_HEADERS src/*/*.h)
 
 # 添加可执行文件，将main.cpp和Student.cpp编译成一个可执行文件
-add_executable(main ${EXEC_SOURCES} ${LIB_SOURCES})
+add_executable(${TARGET} ${EXEC_SOURCES} ${LIB_SOURCES})
 
 # # 指定可执行文件依赖的头文件目录
-target_include_directories(main PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(${TARGET} PRIVATE ${PROJECT_SOURCE_DIR}/include)
 # target_include_directories(main PRIVATE ${PROJECT_SOURCE_DIR}/src/libs)
 
 # 添加其他可能的编译选项，例如C++标准
