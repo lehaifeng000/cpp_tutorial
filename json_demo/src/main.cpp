@@ -25,6 +25,10 @@ int main()
     json json2 = json::parse(inFile);
     cout<<json2["age"];
 
+    //合并
+    data.merge_patch(json2);//这种方式后者覆盖前者
+    data+=json2;//这种方式不覆盖，只添加没有的键
+
     return 0;
 }
 
