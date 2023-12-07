@@ -1,7 +1,7 @@
 # 设置最低的CMake版本要求
 cmake_minimum_required(VERSION 3.0)
 
-set(TARGET hello_world)
+set(TARGET hello)
 
 # 项目名称
 project(${TARGET})
