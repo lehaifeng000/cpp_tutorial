@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/json_demo/src/util",
-                "${workspaceFolder}/json_demo/src/util"
+                "${workspaceFolder}/json_demo/src/util",
+                "/home/lehaifeng/install/vcpkg/installed/x64-linux/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++-11",

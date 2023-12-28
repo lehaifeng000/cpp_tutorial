@@ -10,6 +10,7 @@ add_subdirectory(json_demo)
 add_subdirectory(struct_demo)
 add_subdirectory(xml_demo)
 add_subdirectory(http_demo)
+add_subdirectory(opencv_demo)
 
 # 添加其他可能的编译选项，例如C++标准
 # 设置C++标准为C++11
